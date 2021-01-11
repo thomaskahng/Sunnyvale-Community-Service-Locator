@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            About
+        </title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <style>
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        <body background="">
+
+         <!-- Horizontal tab logic--> 
+        <div class="tab" id="horizontal">
+            <a href='index.html'>
+                <button>Home</button>
+            </a>
+
+            <a href='about.html'>
+                <button>About</button>
+            </a>
+            
+            <a href='#'>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  Find My Service
+
+                  <i class="down"></i>
+                </button>
+
+                <div class="dropdown-content">
+                  <a href="localCommunityService.html">Local Community Service</a>
+
+                  <a href="findMyService.html">Find My Service</a>
+                </div>
+              </div>
+            </a>
+            
+        </div>
+        
+         <!-- Horizontal tab contents--> 
+        <div id="Home" class="tabcontent"></div>
+        <div id="Find My Service" class="tabcontent"></div>
+        <div id="About" class="tabcontent"></div>
+        
+        <div class="tab" id="vertical">
+          <button class="tablinks" onclick="openCity(event, 'About the Creators')" id="defaultOpen">About the Creators</button>
+
+          <button class="tablinks" onclick="openCity(event, 'Help Center')" id="defaultOpen">Help Center</button>
+
+        </div>
+
+        <div id="About The Creators" class="tabcontent">
+          <div class="aboutfont">
+          	<p>
+          		This website was created by two high school students who wanted to help other students find a faster way to find places to volunteer. The creators, Sam Abraham & Thomas Kahng, are both students at Sunnyvale High School. The idea for this website started when they both had an idea to create a website for their High School Project. This website is meant to be used by people, mainly students, who are looking for places to volunteer. Many students must have a minimum requirement of volunteering hours or community service hours. This website is meant to make the search for those locations easier and faster than traditional searching.
+
+          	</p>
+          </div>
+        </div>
+
+        <div id="Help Center" class="tabcontent">
+        	<div class="aboutfont">
+	        	<h3>Contact Information</h3>
+	        	<p>Any Questions? Contact us with via information below:</p>
+
+	        	<p>Thomas Kahng</p>
+	        	<ul>
+	        		<li>Email: </li>
+	        		<li>Phone: </li>
+	        	</ul>
+
+	        	<p>Sam Abraham</p>
+	        	<ul>
+	        		<li>Email: </li>
+	        		<li>Phone: </li>
+	        	</ul>
+	        </div>
+	        
+        	<h3 class="homefont">Location</h3>
+        	<div id="map"></div>
+
+        	<div class="mapouter">
+            	<div class="gmap_canvas">
+            	<iframe width="640" height="480" src="https://www.google.com/maps/d/embed?mid=1hxA4QQieRcGldsFdaq6U5eHBKw8" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+            	<a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">official source</a>
+            </div>
+          </div>
+        </div>
+
+        <script class="mainTab">
+            function openCity(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          document.getElementById("defaultOpen").click();
+        </script>
+    </body>
+</html>
+
+
