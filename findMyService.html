@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Find My Service
+        </title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <style>
+          
+        </style>
+        
+    </head>
+    
+    <body>
+        <body background="">
+        
+        <div class="tab" id="horizontal">
+            <a href='index.html'>
+                <button>Home</button>
+            </a>
+
+            <a href='about.html'>
+                <button>About</button>
+            </a>
+            
+            <a href='#'>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  Find My Service
+
+                  <i class="down"></i>
+                </button>
+
+                <div class="dropdown-content">
+                  <a href="localCommunityService.html">Local Community Service</a>
+
+                  <a href="findMyService.html">Find My Service</a>
+                </div>
+              </div>
+            </a>
+            
+        </div>
+        
+        <div id="Home" class="tabcontent"></div>
+        <div id="Find My Service" class="tabcontent"></div>
+        <div id="About" class="tabcontent"></div>
+        
+        <img src="" height="" width="">
+        
+        <script class="mainTab">
+            function openCity(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+        </script>
+
+        <h1 class="findfont">
+            Find My Service
+        </h1>
+        
+        <p class="findfont">
+            Find My Service is designed to help people find all available community service opportunities. Both in the local area and outside locations.
+        </p>
+
+        <div class="find_map">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1nsIkssmXOfP1efeJgcZjk4fuyKcBGNQ6" width="640" height="480"></iframe>
+        </div>
+
+        <p class="findfont">
+          Can't find your desired community service location? Click on the "More Options" link on the alternative map below to find your desired location.
+        </p>
+
+        <div class="svale_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d107319.61213562661!2d-96.62957317190401!3d32.79920880705506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x864eaf476c554863%3A0xc23bf1df086477e2!2sSunnyvale%20High%20School%2C%20222%20N%20Collins%20Rd%2C%20Sunnyvale%2C%20TX%2075182!3m2!1d32.799084!2d-96.5595324!5e0!3m2!1sen!2sus!4v1574199164844!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" frameborder="0" ></iframe>
+
+            <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">official source</a>
+        </div>
+    </body>
+</html>
+
