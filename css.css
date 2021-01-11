@@ -1,0 +1,167 @@
+div.tab{
+  text-align: center;
+}
+
+.tab, .tab button {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: yellow;
+}
+
+.tab button:hover {
+  background-color: red;
+}
+
+.tab button.active {
+  background-color: blue;
+}
+
+.tabcontent {
+  display: visible;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.localtabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#vertical{
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+#local{
+  float: center;
+}
+
+#horizontal button, #vertical button{
+  display: block;
+  color: black;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+h2.heading{
+  text-align: center;
+}
+
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+}
+
+.homefont, .findfont, .localfont, .aboutfont{
+  color: white;
+}
+
+body{
+  background-color: black;
+}
+
+/* Links inside the navbar */
+.tab a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Location map outlook*/
+.mapouter{
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+
+.gmap_canvas{
+  overflow: hidden;
+  background: none!important;
+  height: 500px;
+  width: 600px;
+}
+
+/* Embedded map outlook */
+.find_map{
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+
+.svale_map{
+  overflow: hidden;
+  background: none!important;
+  height: 500px;
+  width: 600px;
+}
+
